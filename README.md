@@ -24,24 +24,43 @@ MVC 패턴의 기본 구조를 바탕으로, `VO`, `DAO`, `Manager` 계층을 �
 ## 📁 프로젝트 구조
 
 src/
+
 ├── KHStokoMain.java // 애플리케이션 실행 및 메뉴 제공
+
 │
+
 ├── controller/
+
 │ ├── DBUtil.java // DB 연결 
+
 │ ├── KhStokoDAO.java // 관리자 DAO (등록/조회)
+
 │ └── KhStokoCusDAO.java // 고객 DAO
+
 │ │
+
 │ ├── KhStokoManager.java // 관리자 등록/조회 로직
+
 │ └── KhStokoCusManager.java // 고객 등록/조회 로직
+
 │
+
 ├── model/
+
 │ ├── KhStokoVO.java // 관리자 정보 VO
+
 │ └── KhStokoCusVO.java // 고객 정보 VO
+
 │
+
 ├── view /
+
 │ ├── KhMenu.java // 전체적인 메뉴 구현
+
 │ ├── KhMenuChoice.java // 전체적인 메뉴 인터페이스 구현
+
 │ ├── KhStokoChoice.java // 관리자 메뉴 인터페이스 구현
+
 │ └── KhStokoCusChoice.java // 사용자 메뉴 인터페이스 구현
 
 ---
